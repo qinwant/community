@@ -5,10 +5,10 @@ package com.kingwan.community.dto;
  * 说明：
  */
 public class GithubUser {
-    private String name;
-    private String id;
-    private String bio;
-    private String login;
+    private String name;//github名
+    private String id;//github的用户id
+    private String bio;//github的用户说明
+    private String login;//github的登录名
 
     public String getName() {
         return name;
