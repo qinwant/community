@@ -39,6 +39,12 @@
             <artifactId>h2</artifactId>
             <version>1.4.199</version>
         </dependency>
+<!--        热部署-->
+        <dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-devtools</artifactId>
+               <optional>true</optional>
+        </dependency>
 
 <!--        mysql-->
         <dependency>
@@ -89,6 +95,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
             </plugin>
         </plugins>
     </build>
